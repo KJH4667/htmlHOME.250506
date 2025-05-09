@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            padding: 16px;
+            border: 5px solid pink;
+        }
+        
+        .img-wrapper img {
+            background-color: white;
+            border-radius: 8px;
+            padding: 8px;
+            text-align: center;
+            /* 트랜지션 작업 진행하기
+            1. 배경색 변경,  2. 확대*/
+            transition: background-color 0.3s ease-in-out;, transform: 0.3s ease-in-out;
+        }
+
+        .img-wrapper:hover {
+            background-color: aqua;
+            transform: scale(1.03);
+        }
+
+        .test1 {
+            border: 2px solid blue;
+        }
+
+    </style>
+    <h2>나의 사진첩, transition 테스트공간</h2>
+    <div class="container">
+        <!-- 다른 클래스를 여러개 적용시, 구분자가 공백임. -->
+        <!-- 예시) div class="img-wrapper test1" , 2개의 클래스가 적용된 상황 -->
+        <div class="img-wrapper test1">
+            <img src="img/test img2.jpg" alt="샘플사진1" width="500px">
+        </div>
+        <div class="img-wrapper test1">
+            <img src="img/test img1.jpg" alt="샘플사진2" width="500px">
+        </div>
+        <div class="img-wrapper test1">
+            <img src="img/test img3.jpg" alt="샘플사진3" width="300px">
+        </div>
+</div>
+</body>
+</html>

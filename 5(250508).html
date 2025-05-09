@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5번 css 기본연습(20250508)</title>
+</head>
+
+<body>
+    <style>
+        /* h1 {
+            border: 5px solid red;
+        } */
+
+        .saw {
+            border: 5px solid red;
+        }
+
+        #box1_block {
+            border: 5px solid red;
+            display: block;
+        }
+
+        #box2_inline {
+            border: 5px dotted green;
+            display: inline;
+            margin-bottom: 50px;
+        }
+
+        .box_base {
+            border: 5px double blue;
+            display: inline;
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+    </style>
+    <img src="img/coding.jpg.jpg" width="500px" alt="이미지 첨부">
+    <h1><a href="index.html" class="saw">WEB</a></h1>
+    <h2 id="box1_inline">미니실습 5번 파일 생성, 자기소개 박스 css 꾸미기</h2>
+    <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+        <li><a href="4.html">JavaScript</a></li>
+        <li><a href="5.html">미니실습-css-박스표시하기</a></li>
+    </ol>
+
+    <h2 id="box2_inline">자기소개</h2>
+    <br>
+    <img src="img/coding.jpg.jpg" width="500px" class="box_base">
+    <!-- <p style="margin-top: 40px;">
+ 이름: ㅇ
+ </p> -->
+    <span class="saw">
+        이름: 권장후
+    </span>
+    <br>
+    <div class="box_base">
+        테스트
+    </div>
+    <div class="box_base">
+        <ol>
+            <li>나이:ㅇ</li>
+            <li>취미:ㅇ</li>
+            <li>특기:ㅇ</li>
+        </ol>
+        </p>
+    </div>
+
+
+</body>
+
+</html>
